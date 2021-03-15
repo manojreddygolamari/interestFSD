@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest Calculator</title>
+    <link rel="shortcut icon" href="img/fav.jpg" type="image/x-icon">
+    <script src="interest.js"></script>
+    <link rel="stylesheet" href="interest.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Interest Calculator</h2>
+        <table>
+            <tr>
+                <td>Select type of Interest</td>
+               <td>
+                <select  id="select">
+                    <option hidden>Select Interest</option>
+                    <option value="Si">Simple Interest</option>
+                    <option value="Ci">Compound Interest</option>
+                </select>
+               </td>
+            </tr>
+            <tr>
+                <td>Principle Amount</td>
+                <td><input id="principle"></td>
+            </tr>
+            <tr>
+                <td>Rate of Interest</td>
+                <td><input id="roi" type="number" min="1"></td>
+            </tr>
+            <tr>
+                <td>Loan taken Date</td>
+                <td><input id="ltd" type="date"></td>
+            </tr>
+            <tr>
+                <td>Loan return Date</td>
+                <td><input id="lrd" type="date"></td>
+            </tr>
+           
+            <tr>
+                <td><button id="button">calculate</button></td>
+            </tr>
+            <tr id="dispnone1">
+                <td>Interest</td>
+                <td><input id="int"></td>
+            </tr>
+            <tr id="dispnone2">
+                <td>Amount need to be paid</td>
+                <td><input id="amt"></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><p id="day"></p></td>
+            </tr>
+        </table>
+    </div>
+   
+</body>
+</html>
